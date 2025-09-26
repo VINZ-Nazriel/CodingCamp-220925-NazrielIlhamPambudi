@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Website Latihan - Nazriel</title>
+
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+
+<body>
+    <header class="main-header">
+        <div class="logo-container">
+            <img src="assets/Logo-RevoU-5.png" alt="Logo">
+            <div class="logo-text">
+                <span id="greeting">Hi User</span>, Welcome To Website
+                <p>Ini adalah website latihan pertama</p>
+            </div>
+        </div>
+        <nav>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="profile.html">Our Profile</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#message-us">Message Us</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <hr>
+
+    <main>
+        <section id="home" class="hero-section">
+            <img src="assets/skyline-1925943_1280.jpg" alt="Banner Image" class="hero-image">
+        </section>
+
+        <section id="our-headquarter" class="headquarter-section">
+            <h2>Our Headquarter</h2>
+            <div class="headquarter-container">
+                <div class="headquarter-item">
+                    <img src="assets/wisma-46-6831957_1280.jpg" alt="Jakarta" class="headquarter-circle">
+                    <p>Jakarta</p>
+                </div>
+                <div class="headquarter-item">
+                    <img src="assets/building-8373615_1280.jpg" alt="Bandung" class="headquarter-circle">
+                    <p>Bandung</p>
+                </div>
+                <div class="headquarter-item">
+                    <img src="assets/sevilla-tower-786180_1280.jpg" alt="Surabaya" class="headquarter-circle">
+                    <p>Surabaya</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="message-us" class="message-section">
+            <h2>Message Us</h2>
+            <div class="message-container">
+                <form id="messageForm" class="message-form">
+                    <div class="form-group">
+                        <label for="name">Name:</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="dob">Tanggal Lahir:</label>
+                        <input type="date" id="dob" name="dob" required>
+                    </div>
+                    <div class="form-group">
+                        <label>Jenis Kelamin:</label>
+                        <div class="radio-group">
+                            <input type="radio" id="male" name="gender" value="Laki-Laki" required>
+                            <label for="male">Laki-Laki</label>
+                            <input type="radio" id="female" name="gender" value="Perempuan">
+                            <label for="female">Perempuan</label>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Pesan:</label>
+                        <textarea id="message" name="message" rows="4" required></textarea>
+                    </div>
+                    <button type="submit">Submit</button>
+                </form>
+                <div class="submission-details">
+                    <div id="submission-output">
+                        <p><strong>Current Time:</strong> <span id="current-time"></span></p>
+                        <p><strong>Nama:</strong> <span id="output-name"></span></p>
+                        <p><strong>Tanggal Lahir:</strong> <span id="output-dob"></span></p>
+                        <p><strong>Jenis Kelamin:</strong> <span id="output-gender"></span></p>
+                        <p><strong>Pesan:</strong> <span id="output-message"></span></p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>Created By Nazriel</p>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+
+</html>
